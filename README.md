@@ -11,7 +11,7 @@ It's the last 4 overs of the match. Bengaluru needs 40 runs to win and with 4 wi
 player has a different probability for scoring runs. Your coding problem is to simulate the match,
 ball by ball. The match simulation will require you to use a weighted random number generation
 based on probability to determine the runs scored per ball.
-
+![Alt text](src/main/resources/Screen Shot 2018-08-22 at 9.45.13 PM.png?raw=true "Title")
 Rules of the game:
 ● Batsmen change strike end of every over. They also change strike when they score a
 1,3 or 5
