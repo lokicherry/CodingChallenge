@@ -1,4 +1,4 @@
-package Initializer;
+package Commentary;
 
 import beans.Player;
 import beans.Required;
