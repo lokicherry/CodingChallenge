@@ -6,6 +6,8 @@ import beans.Required;
 import java.util.List;
 
 public class Update {
+
+
     public static List<Player> overCompleted(List<Player> players){
         Player temp = players.get(0);
         players.set(0,players.get(1));
@@ -32,6 +34,7 @@ public class Update {
         return players;
     }
 
+    //update wickets in required
     public static Required updateWickets(Required required){
         int prevWickets = required.getWicketsLeft();
         required.setWicketsLeft(prevWickets-1);
