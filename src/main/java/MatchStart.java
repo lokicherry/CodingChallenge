@@ -61,6 +61,8 @@ public class MatchStart {
                             Player temp = onCrease.get(0);
                             temp.setOut(true);
                             temp.setPlaying(false);
+                            int prevBalls = temp.getNumberofBallsPlayed();
+                            temp.setNumberofBallsPlayed(prevBalls+1);
                             players.set(k, temp);
                             onCrease.set(0, players.get(index));
                             index++;
