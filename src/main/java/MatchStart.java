@@ -80,6 +80,7 @@ public class MatchStart {
                             int prevBalls = temp.getNumberofBallsPlayed();
                             temp.setNumberofBallsPlayed(prevBalls+1);
                             players.set(k, temp);
+                            players.get(index).setPlaying(true);
                             break;
                         }
                     }
@@ -95,6 +96,7 @@ public class MatchStart {
 
                 required = Update.updateRequiredScore(required,run);
             }
+            //if target is chased down printing match summary
             if(required.getNumberOfRunsRequired()<=0){
                 Commentary.matchSummary(required,ballsCompleted);
                 Commentary.printPlayerScores(players);
@@ -102,6 +104,7 @@ public class MatchStart {
             }
 
         }
+        //if balls got over then printing match summary
         if(ballsCompleted==(required.getBallsLeft()-1)){
             Commentary.matchSummary(required,ballsCompleted);
             Commentary.printPlayerScores(players);
