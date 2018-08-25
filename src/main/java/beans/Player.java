@@ -7,8 +7,8 @@ public class Player {
     private List<Integer> playerProbability;
     private int numberOfRunsScored;
     private int numberofBallsPlayed;
-    private boolean isOut;
-    private boolean isPlaying;
+    public boolean isOut;
+    public boolean isPlaying;
     public Player(String name, List<Integer> playerProbability,int numberofBallsPlayed,int numberOfRunsScored,boolean isOut,boolean isPlaying){
         this.name = name;
         this.playerProbability=playerProbability;

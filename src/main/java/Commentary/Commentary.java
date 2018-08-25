@@ -27,7 +27,12 @@ public class Commentary {
         System.out.println();
         Player currentPlayer;
         for (int i = 0; i < players.size(); i++) {
-            System.out.println("\t"+players.get(i).getName()+" - "+players.get(i).getNumberOfRunsScored()+"("+players.get(i).getNumberofBallsPlayed()+")");
+            if (!players.get(i).isPlaying) {
+                System.out.println("\t" + players.get(i).getName() + " - " + players.get(i).getNumberOfRunsScored() + "(" + players.get(i).getNumberofBallsPlayed() + ")");
+            }
+            else{
+                System.out.println("\t" + players.get(i).getName() + " - " + players.get(i).getNumberOfRunsScored()+ "*" + " (" + players.get(i).getNumberofBallsPlayed() + ")");
+            }
         }
     }
 

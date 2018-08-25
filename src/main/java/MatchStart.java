@@ -65,12 +65,24 @@ public class MatchStart {
                             temp.setNumberofBallsPlayed(prevBalls+1);
                             players.set(k, temp);
                             onCrease.set(0, players.get(index));
+                            onCrease.get(0).setPlaying(true);
                             index++;
                             break;
                         }
                     }
                 }
                 else{
+                    for (int k = 0; k < players.size(); k++) {
+                        if ((onCrease.get(0).getName().equals(players.get(k).getName()))) {
+                            Player temp = onCrease.get(0);
+                            temp.setOut(true);
+                            temp.setPlaying(false);
+                            int prevBalls = temp.getNumberofBallsPlayed();
+                            temp.setNumberofBallsPlayed(prevBalls+1);
+                            players.set(k, temp);
+                            break;
+                        }
+                    }
                     Commentary.alloutMatchSummary(required);
                     Commentary.printPlayerScores(players);
                     break;
@@ -89,6 +101,10 @@ public class MatchStart {
                 break;
             }
 
+        }
+        if(ballsCompleted==(required.getBallsLeft()-1)){
+            Commentary.matchSummary(required,ballsCompleted);
+            Commentary.printPlayerScores(players);
         }
     }
 
