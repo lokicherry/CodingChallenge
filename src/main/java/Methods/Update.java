@@ -1,4 +1,4 @@
-package UpdatingMethods;
+package Methods;
 
 import beans.Player;
 import beans.Required;
@@ -40,4 +40,5 @@ public class Update {
         required.setWicketsLeft(prevWickets-1);
         return required;
     }
+
 }

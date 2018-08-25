@@ -1,6 +1,7 @@
 import Commentary.Commentary;
 import Initializer.MatchIntializer;
-import UpdatingMethods.Update;
+import Methods.PlayBall;
+import Methods.Update;
 import beans.Player;
 import beans.Required;
 
@@ -53,10 +54,12 @@ public class MatchStart {
 
             else if (run==7) {
                 required = Update.updateWickets(required);
+
                 if (required.getWicketsLeft() > 2) {
-                    for (int k = 0; i < players.size(); k++) {
+                    for (int k = 0; k < players.size(); k++) {
                         if ((onCrease.get(0).getName().equals(players.get(k).getName()))) {
                             Player temp = onCrease.get(0);
+                            Commentary.playerScore(temp);
                             temp.setOut(true);
                             temp.setPlaying(false);
                             players.set(k, temp);

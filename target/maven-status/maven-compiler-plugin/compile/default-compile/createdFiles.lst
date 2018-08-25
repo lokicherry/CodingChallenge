@@ -1,5 +1,7 @@
 beans/Player.class
 Initializer/MatchIntializer.class
 PlayBall.class
-beans/Required.class
 MatchStart.class
+Commentary/Commentary.class
+UpdatingMethods/Update.class
+beans/Required.class

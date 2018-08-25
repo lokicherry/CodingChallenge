@@ -47,4 +47,7 @@ public class Commentary {
             System.out.println(" " + overs + "." + balls + ":\t" + name + " \"OUT\"");
         } else System.out.println(" " + overs + "." + balls + ":\t" + name + " scores " + runs + " runs");
     }
+    public static void playerScore(Player player){
+        System.out.println(player.getName()+"score ="+player.getNumberOfRunsScored());
+    }
 }

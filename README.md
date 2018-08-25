@@ -62,3 +62,15 @@ Guidelines
 - Clean, OO (or functional if you prefer) code is expected. Preferably with tests.
 - Add a README file detailing the instructions to run tests and the application.
 1 Source: GeekTrust
+
+
+TO run:
+
+#Code:
+--> beans player and required are for initializing match conditions
+
+--> Initializer is for initializing match conditions so if we want to modify match settings we can do it by modifying this class.
+
+-->Playball takes the players list and give runs scored that ball by taking the probablity of hitting the ball of the particular player by weighted random.
+
+-->
