@@ -16,7 +16,6 @@ public class PlayBall {
             }
             randomnumber=randomnumber-probabiityList.get(i);
         }
-        System.out.println("returning "+runs);
         return runs;
     }
 }
