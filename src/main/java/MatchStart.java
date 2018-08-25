@@ -59,7 +59,6 @@ public class MatchStart {
                     for (int k = 0; k < players.size(); k++) {
                         if ((onCrease.get(0).getName().equals(players.get(k).getName()))) {
                             Player temp = onCrease.get(0);
-                            Commentary.playerScore(temp);
                             temp.setOut(true);
                             temp.setPlaying(false);
                             players.set(k, temp);
